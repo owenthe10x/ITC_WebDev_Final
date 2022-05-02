@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Home</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <nav>
+        <img src="/Images/owenlogo.png" alt="logo" class="logo">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>  
+    </nav>
+    <header id="home">
+        <h3>Hello! I'm</h3>
+        <h1>Owen Tobias Sinurat</h1>
+        <p>that's steve btw*</p>
+    </header>
+    <main>
+        <article id="about">
+            <h1>About me</h1>
+            <div class="content">
+                <p>My name is Owen Tobias Sinurat, and I'm currently studying at the Yogyakarta 'Veteran' National Development University majoring in Informatics Engineering. I am an 18 year old tech enthusiast and currently lived in Sleman, Special Region of Yogyakarta. I have been coding since the last year of highschool and never get tired of doing it until now. I like to use my free time to do productive activities or do my hobbies like doing sports, cooking, playing online games, and studying. </p>
+                <img src="./Images/computer.jpeg" alt="the rock">
+            </div>
+        </article>
+        <article id="skill">
+            <h1>My Skills</h1>
+            <div class="content">
+                <p>I have studied several programming languages and understand the fundamentals. Here is the statistics of my expertise in several programming languages.</p>
+                <div class="stats">
+                    <h2>STATS</h2>                
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>SASS</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="line sass"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>SQL</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line sql"></div>
+                    </div>
+                </div>
+                    <img src="./Images/samurai.jpg" alt="samurai">
+            </div>
+        </article>
+        <article id="experience">
+            <h1>My Experiences</h1>
+            <div class="content">
+                <p>I have no experience in the world of work because I myself am still a beginner in programming. However, I've attended several certified programming bootcamps. All my certificates can be seen in the link below.</p>
+                <div class="certi"><a href="https://drive.google.com/drive/folders/1w0zPzJX8OfdWvkW63KYpdFjrUGoGr40d?usp=sharing">E-Certificates</a></div>
+                <img src="./Images/Programmer.jpg" alt="Programmer">
+            </div>
+        </article>
+        <footer id="footer">
+            <h1>Get in touch with me!</h1>
+            <a href="mailto:owentobias21@gmail.com" class="link" target="_blank"><i class="far fa-envelope"></i></a>
+            <a href="https://www.instagram.com/owentobias_/" class="link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+6282251861573?text=Halo%2C%20saya%20mendapatkan%20nomor%20anda%20dari%20website%20portfolio%20anda." class="link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </footer>
+        <script type="text/javascript">
+            let progress = document.getElementById('progressbar');
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            window.onscroll = function() {
+                let progressHeight = (window.pageYOffset / totalHeight) * 100;
+                progress.style.height = progressHeight + '%';
+            }
+        </script>
+    </main>
+    
+</body>
+
+</html>
